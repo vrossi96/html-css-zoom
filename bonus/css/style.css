@@ -181,3 +181,41 @@ footer a:active {
 footer li:hover i[class*="fa-chevron-up"] {
   transform: rotate(180deg);
 }
+
+/* Dropdown Undermenu */
+.has-dropdown {
+  position: relative;
+}
+
+.undermenu {
+  position: absolute;
+  flex-direction: column-reverse;
+  bottom: 100%;
+  left: 0;
+  background-color: #222222;
+  border-bottom: 1px solid grey;
+  transition: 0.3s 0.2s;
+  visibility: hidden;
+  opacity: 0;
+}
+.undermenu li {
+  display: block;
+  width: 100%;
+}
+.undermenu a {
+  display: block;
+  text-align: center;
+  padding: 15px 25px;
+  background-color: #222222;
+  border: 1px solid grey;
+  border-bottom: none;
+}
+
+.undermenu a:hover {
+  background-color: #4a4a4a;
+}
+
+.has-dropdown:hover .undermenu {
+  visibility: visible;
+  opacity: 1;
+}
