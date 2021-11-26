@@ -1,0 +1,174 @@
+/* ****************** generics ************************************* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ********************* containers ******************* */
+#body-container {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-basis: 25px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #222222;
+  flex-basis: 80px;
+}
+
+/* ******************** utilities ********************* */
+
+.btn {
+  background-color: #4a4a4a;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* *********************** header *********************** */
+header {
+  text-align: right;
+  margin: 10px 5px;
+}
+
+/* ************************* main ************************** */
+#pics-container {
+  max-height: calc(100vh - 105px);
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+}
+
+.picture {
+  min-width: 150px;
+  width: calc(100vw / 6);
+  position: relative;
+  margin: 4px 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.picture .microphone-status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.microphone-status span {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+.picture:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* ************************* footer ************************** */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > * {
+  display: flex;
+  height: 100%;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+}
+footer li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+footer i {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+footer i.fa-chevron-up {
+  font-size: 0.6rem;
+}
+
+.left-nav,
+.end-meeting {
+  flex-basis: 15%;
+}
+.central-nav {
+  flex-grow: 1;
+}
+
+.left-nav {
+  align-items: center;
+}
+
+.left-nav a,
+.central-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+/* Central nav */
+footer .central-nav {
+  justify-content: center;
+}
+.central-nav li {
+  margin: 5px 10px;
+}
+
+/* End meeting section */
+.end-meeting {
+  justify-content: end;
+  align-items: center;
+}
+.end-meeting a {
+  display: block;
+  font-size: 0.9rem;
+  height: 100%;
+  line-height: 65px;
+  vertical-align: middle;
+  padding: 0 15px;
+  background-color: #4a4a4a;
+  color: #d9231b;
+}
+
+/* Hover  */
+footer a:hover i:not(.fa-chevron-up),
+header a:hover {
+  color: #4bc800;
+}
