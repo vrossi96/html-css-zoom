@@ -108,11 +108,13 @@ footer > * {
 footer ul {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 footer li {
   display: flex;
   list-style-type: none;
   align-items: center;
+  height: 100%;
 }
 
 footer i {
@@ -157,11 +159,10 @@ footer .central-nav {
   align-items: center;
 }
 .end-meeting a {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 0.9rem;
   height: 100%;
-  line-height: 65px;
-  vertical-align: middle;
   padding: 0 15px;
   background-color: #4a4a4a;
   color: #d9231b;
@@ -171,4 +172,12 @@ footer .central-nav {
 footer a:hover i:not(.fa-chevron-up),
 header a:hover {
   color: #4bc800;
+}
+
+footer a:active {
+  color: #4bc800;
+}
+
+footer li:hover i[class*="fa-chevron-up"] {
+  transform: rotate(180deg);
 }
