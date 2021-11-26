@@ -29,7 +29,6 @@ header {
 }
 
 main {
-  background-color: brown;
   flex-grow: 1;
 }
 
@@ -51,4 +50,25 @@ footer {
 header {
   text-align: right;
   margin: 10px 5px;
+}
+
+/* ************************* main ************************** */
+#pics-container {
+  max-height: calc(100vh - 105px);
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+}
+
+.picture {
+  min-width: 150px;
+  width: calc(100% / 6);
+  position: relative;
+  padding: 2px;
+}
+.picture img {
+  width: 100%;
 }
