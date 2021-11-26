@@ -156,6 +156,7 @@ footer .central-nav {
 }
 
 /* Hover  */
-footer a:hover i:not(.fa-chevron-up) {
+footer a:hover i:not(.fa-chevron-up),
+header a:hover {
   color: #4bc800;
 }
