@@ -90,20 +90,23 @@ header {
 footer {
   display: flex;
 }
+footer > * {
+  border: 1px dashed white;
+  height: 100%;
+}
 footer ul {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 footer li {
   list-style-type: none;
 }
-footer li {
-  display: flex;
-}
 
-footer > * {
-  border: 1px dashed white;
-  height: 100%;
+footer i {
+  font-size: 1.5rem;
+}
+footer i.fa-chevron-up {
+  font-size: 0.6rem;
 }
 
 .left-nav,
@@ -112,4 +115,16 @@ footer > * {
 }
 .central-nav {
   flex-grow: 1;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+/* Left nav */
+.left-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 10px;
 }
