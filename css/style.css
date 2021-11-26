@@ -105,6 +105,7 @@ footer li {
 
 footer i {
   font-size: 1.5rem;
+  transition: 0.3s;
 }
 footer i.fa-chevron-up {
   font-size: 0.6rem;
@@ -152,4 +153,9 @@ footer .central-nav {
   padding: 0 15px;
   background-color: #4a4a4a;
   color: #d9231b;
+}
+
+/* Hover  */
+footer a:hover i:not(.fa-chevron-up) {
+  color: #4bc800;
 }
