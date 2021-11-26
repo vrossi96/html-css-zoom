@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
 }
 img {
@@ -16,6 +16,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 /* ********************* containers ******************* */
 #body-container {
   background-color: black;
@@ -86,3 +87,29 @@ header {
 }
 
 /* ************************* footer ************************** */
+footer {
+  display: flex;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer li {
+  list-style-type: none;
+}
+footer li {
+  display: flex;
+}
+
+footer > * {
+  border: 1px dashed white;
+  height: 100%;
+}
+
+.left-nav,
+.end-meeting {
+  flex-basis: 15%;
+}
+.central-nav {
+  flex-grow: 1;
+}
