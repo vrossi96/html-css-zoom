@@ -1,18 +1,22 @@
-/* ******************generics************************************* */
+/* ****************** generics ************************************* */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  color: white;
 }
 img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+/* ********************* containers ******************* */
 #body-container {
   background-color: black;
   height: 100vh;
@@ -32,4 +36,19 @@ main {
 footer {
   background-color: #222222;
   flex-basis: 80px;
+}
+
+/* ******************** utilities ********************* */
+
+.btn {
+  background-color: #4a4a4a;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* *********************** header *********************** */
+header {
+  text-align: right;
+  margin: 10px 5px;
 }
