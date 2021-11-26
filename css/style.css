@@ -89,6 +89,7 @@ header {
 /* ************************* footer ************************** */
 footer {
   display: flex;
+  flex-wrap: wrap;
 }
 footer > * {
   display: flex;
@@ -135,4 +136,20 @@ footer .central-nav {
 }
 .central-nav li {
   margin: 5px 10px;
+}
+
+/* End meeting section */
+.end-meeting {
+  justify-content: end;
+  align-items: center;
+}
+.end-meeting a {
+  display: block;
+  font-size: 0.9rem;
+  height: 100%;
+  line-height: 65px;
+  vertical-align: middle;
+  padding: 0 15px;
+  background-color: #4a4a4a;
+  color: #d9231b;
 }
