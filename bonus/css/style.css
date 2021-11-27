@@ -50,8 +50,9 @@ footer {
 
 /* *********************** header *********************** */
 header {
-  text-align: right;
-  margin: 10px 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 5px;
 }
 
 /* ************************* main ************************** */
