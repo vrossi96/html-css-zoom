@@ -193,26 +193,35 @@ footer li:hover i[class*="fa-chevron-up"] {
 
 .undermenu {
   position: absolute;
-  flex-direction: column-reverse;
   bottom: 100%;
   left: 0;
+  width: 250px;
   background-color: #222222;
-  border-bottom: 1px solid grey;
+  /* border properties */
+  border: 1px solid grey;
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+  /* menu visibility & transition */
+  overflow: hidden;
   transition: 0.3s 0.2s;
   visibility: hidden;
   opacity: 0;
 }
+.undermenu ul {
+  flex-direction: column-reverse;
+}
 .undermenu li {
   display: block;
   width: 100%;
+  border-bottom: 1px solid grey;
+  margin: 0;
+  padding: 5px 0;
 }
 .undermenu a {
   display: block;
   text-align: center;
   padding: 15px 25px;
   background-color: #222222;
-  border: 1px solid grey;
-  border-bottom: none;
 }
 
 .undermenu a:hover {
